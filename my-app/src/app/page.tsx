@@ -1,22 +1,25 @@
-import Head from "next/head";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Oliver Blomdell - Informationsarkitekt",
+  description: "Portfölj för Oliver Blomdell - informationsarkitekt.",
+  openGraph: {
+    title: "Oliver Blomdell - Informationsarkitekt",
+    description: "Utforska projekt, metoder och lösningar av Oliver Blomdell inom digital struktur och användbarhet.",
+    url: "https://oliverblomdell.se",
+    siteName: "Oliver Blomdell",
+    type: "website",
+    //images: ["/namn.jpg"],
+  },
+  metadataBase: new URL("https://oliverblomdell.se"),
+};
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Oliver Blomdell - Information Architect</title>
-        <meta name="description" content="Portfölj för Oliver Blomdell - Information Architect med fokus på struktur, användbarhet och design." />
-        <meta property="og:title" content="Oliver Blomdell – Information Architect" key="og:title" />
-        <meta property="og:description" content="Utforska arbetet och projekten av Oliver Blomdell, specialiserad på informationsarkitektur och digital design." key="og:description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <section className="min-h-screen">
-          <h1>Hello</h1>
-        </section>
-      </main>
-    </>
+    <main>
+      <section className="min-h-screen">
+        <h1>Hello</h1>
+      </section>
+    </main>
   );
 }
