@@ -4,7 +4,7 @@ import "./globals.css";
 import localFont from 'next/font/local'
 
 const burtons = localFont({
-  src: './fonts/Burtons.otf',
+  src: '../fonts/Burtons.otf',
   variable: '--font-burtons',
 })
 
