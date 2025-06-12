@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata: Metadata = {
   title: "Oliver Blomdell - Information Architect",
@@ -15,13 +16,13 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-white px-10 md:px-20 lg:px-40">
+    <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
       <section className="min-h-screen">
         <nav className="py-10 mb-12 flex justify-between">
           <h1 className="text-xl font-main">oliver blomdell</h1>
           <ul className="flex items-center">
             <li>
-              <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
+              <ThemeToggle />
             </li>
             <li>
               <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a>
