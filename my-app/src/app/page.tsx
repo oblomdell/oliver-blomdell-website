@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+    <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300">
       <section className="min-h-screen">
         <nav className="py-10 mb-12 flex justify-between">
           <h1 className="text-xl font-main">oliver blomdell</h1>
