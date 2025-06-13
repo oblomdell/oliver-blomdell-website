@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import ThemeToggle from "@/components/ThemeToggle";
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Oliver Blomdell - Information Architect",
@@ -17,7 +18,7 @@ export default function Home() {
   return (
     <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300">
       <section className="min-h-screen">
-        <nav className="py-10 mb-12 flex justify-between">
+        <nav className="py-10 mb-12 flex justify-between dark:text-white">
           <h1 className="text-xl font-main">oliver blomdell</h1>
           <ul className="flex items-center">
             <li>
@@ -29,11 +30,11 @@ export default function Home() {
           </ul>
         </nav>
         <div className="text-center p-10">
-          <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Oliver Blomdell</h2>
-          <h3 className="text-2xl py-2 md:text-3xl">Junior developer.</h3>
-          <p className="text-base py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sequi pariatur vitae cum laboriosam illum atque rem numquam.</p>
+          <h2 className="text-5xl py-2 text-teal-600 dark:text-teal-400 font-medium md:text-6xl">Oliver Blomdell</h2>
+          <h3 className="text-2xl font-medium py-2 md:text-3xl">Information Architect.</h3>
+          <p className="text-base py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-lg mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sequi pariatur vitae cum laboriosam illum atque rem numquam.</p>
         </div>
-        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
           <AiFillLinkedin />
           <AiFillGithub />
           <AiFillMail />
@@ -46,33 +47,42 @@ export default function Home() {
       <section>
         <div>
           <h3 className="text-3xl py-1">Titel</h3>
-          <p className="text-base py-2 leading-8 text-gray-800">
+          <p className="text-base py-2 leading-8 text-gray-800 dark:text-gray-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias voluptatem perspiciatis iste quod tenetur incidunt?<span className="text-teal-500"> Lorem. </span>Lorem, ipsum.<span className="text-teal-500"> Lorem. </span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam hic eveniet perspiciatis repudiandae dolor, dignissimos accusamus!
           </p>
-          <p className="text-base py-2 leading-8 text-gray-800">
+          <p className="text-base py-2 leading-8 text-gray-800 dark:text-gray-200">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus tempora accusamus amet qui facilis fuga.
           </p>
         </div>
         <div className="lg:flex gap-10">
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
-            <h3 className="text-lg font-medium pt-8 pb-2">Tech Stack</h3>
-            <p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita sit ullam.</p>
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="flex justify-center">
+              <Image src="/images/design.png" width={100} height={100} alt="Picture of a canvas" />
+            </div>
+            <h3 className="text-lg font-medium pt-8 pb-2 dark:text-black">Tech Stack</h3>
+            <p className="py-2 dark:text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita sit ullam.</p>
             <h4 className="py-4 text-teal-600">Tools i use</h4>
             <p className="text-gray-800 py-1">React</p>
             <p className="text-gray-800 py-1">Figma</p>
             <p className="text-gray-800 py-1">Adobe XD</p>
           </div>
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
-            <h3 className="text-lg font-medium pt-8 pb-2">Tech Stack</h3>
-            <p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita sit ullam.</p>
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="flex justify-center">
+              <Image src="/images/code.png" width={100} height={100} alt="Picture of a canvas" />
+            </div>
+            <h3 className="text-lg font-medium pt-8 pb-2 dark:text-black">Tech Stack</h3>
+            <p className="py-2 dark:text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita sit ullam.</p>
             <h4 className="py-4 text-teal-600">Tools i use</h4>
             <p className="text-gray-800 py-1">React</p>
             <p className="text-gray-800 py-1">Figma</p>
             <p className="text-gray-800 py-1">Adobe XD</p>
           </div>
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
-            <h3 className="text-lg font-medium pt-8 pb-2">Tech Stack</h3>
-            <p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita sit ullam.</p>
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="flex justify-center">
+              <Image src="/images/consulting.png" width={100} height={100} alt="Picture of a canvas" />
+            </div>
+            <h3 className="text-lg font-medium pt-8 pb-2 dark:text-black">Tech Stack</h3>
+            <p className="py-2 dark:text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita sit ullam.</p>
             <h4 className="py-4 text-teal-600">Tools i use</h4>
             <p className="text-gray-800 py-1">React</p>
             <p className="text-gray-800 py-1">Figma</p>
@@ -84,10 +94,10 @@ export default function Home() {
       <section>
         <div>
           <h3 className="text-3xl py-1">Portfolio</h3>
-          <p className="text-base py-2 leading-8 text-gray-800">
+          <p className="text-base py-2 leading-8 text-gray-800 dark:text-gray-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias voluptatem perspiciatis iste quod tenetur incidunt?<span className="text-teal-500"> Lorem. </span>Lorem, ipsum.<span className="text-teal-500"> Lorem. </span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam hic eveniet perspiciatis repudiandae dolor, dignissimos accusamus!
           </p>
-          <p className="text-base py-2 leading-8 text-gray-800">
+          <p className="text-base py-2 leading-8 text-gray-800 dark:text-gray-200">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus tempora accusamus amet qui facilis fuga.
           </p>
         </div>

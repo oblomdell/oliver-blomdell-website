@@ -20,15 +20,15 @@ export default function ThemeToggle() {
             variant="outline"
             size="icon"
             onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
-            className="cursor-pointer text-2xl rounded-full"
+            className="cursor-pointer rounded-full"
             aria-label="Toggle theme"
             title="Toggle theme"
             type="button"
         >
             {currentTheme === "dark" ? (
-                <BsSunFill className="text-white" />
+                <BsSunFill className="size-6" />
             ) : (
-                <BsFillMoonStarsFill className="text-black" />
+                <BsFillMoonStarsFill className="size-6" />
             )}
         </Button>
     );
