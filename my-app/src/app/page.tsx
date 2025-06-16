@@ -77,7 +77,7 @@ export default function Home() {
           </p>
         </div> */}
         <div className="lg:flex gap-10">
-          <div className="shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-zinc-800 dark:text-gray-100 transition-colors duration-300 flex-1">
+          <div className="shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-zinc-800 dark:text-gray-100 flex-1">
             <h3 className="text-lg font-medium pb-2">Tools & Technologies</h3>
             <p className="py-2">I use modern web technologies and tools to design and build efficient, sclable and, user-friendly digital solutions.</p>
 
@@ -98,7 +98,7 @@ export default function Home() {
             <p className="text-gray-800 dark:text-gray-200 text-sm py-0.5">Figma</p>
             <p className="text-gray-800 dark:text-gray-200 text-sm py-0.5">Adobe XD</p>
           </div>
-          <div className="shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-zinc-800 dark:text-gray-100 transition-colors duration-300 flex-1">
+          <div className="shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-zinc-800 dark:text-gray-100 flex-1">
             <h3 className="text-lg font-medium pb-2">Tech Stack</h3>
             <p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita sit ullam.</p>
             <h4 className="py-4 text-teal-600 dark:text-teal-400">Tools I use</h4>
@@ -106,7 +106,7 @@ export default function Home() {
             <p className="text-gray-800 dark:text-gray-200 py-1">Figma</p>
             <p className="text-gray-800 dark:text-gray-200 py-1">Adobe XD</p>
           </div>
-          <div className="shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-zinc-800 dark:text-gray-100 transition-colors duration-300 flex-1">
+          <div className="shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-zinc-800 dark:text-gray-100 flex-1">
             <h3 className="text-lg font-medium pb-2">Education & Experience</h3>
             <p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita sit ullam.</p>
             <h4 className="py-4 text-teal-600 dark:text-teal-400">Tools I use</h4>
