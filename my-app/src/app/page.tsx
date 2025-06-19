@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import ThemeToggle from "@/components/ThemeToggle";
 import Image from "next/image"
+import { BiBuilding } from "react-icons/bi";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Oliver Blomdell - Information Architect",
   description: "Portfolio and website for Oliver Blomdell, an information architect focused on digital structure and usability.",
   openGraph: {
     title: "Oliver Blomdell - Information Architect",
-    description: "Explore projects, methods and solutions by Oliver Blomdell within digital structure and usability.",
+    description: "Portfolio and website for Oliver Blomdell, an information architect focused on digital structure and usability.",
     url: "https://oliverblomdell.se",
     //images: ["/namn.jpg"],
   }
@@ -16,10 +18,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300">
+    <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300 font-main">
       <section className="mb-10">
         <nav className="py-10 mb-12 space-x-2 flex justify-between dark:text-white">
-          <h1 className="text-xl font-main">oliver blomdell</h1>
+          <h1 className="text-xl font-title">oliver blomdell</h1>
           <ul className="flex items-center">
             <li>
               <ThemeToggle />
@@ -32,6 +34,25 @@ export default function Home() {
         <div className="text-center p-10">
           <h2 className="text-5xl py-2 text-teal-600 dark:text-teal-400 font-medium md:text-6xl">Oliver Blomdell</h2>
           <h3 className="text-2xl font-medium py-2 md:text-3xl">Information Architect.</h3>
+
+              <div className="flex justify-center py-2">
+                <div className="flex sm:flex-row sm:items-center flex-col-reverse items-start gap-3 sm:gap-10">
+                  <div className="flex items-center gap-3">
+                    <BiBuilding className="w-5 h-5" />
+                    <h3 className="text-gray-400">Malmö, Sweden</h3>
+                  </div>
+
+                  <Button variant="ghost" className="hover:bg-black/50 duration-300 hover:text-white rounded-full">
+                    <div className="relative flex text-sm gap-1 items-center justify-center h-3 w-3 rounded-full">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500"></span>
+                      <span className="inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </div>
+                    <p>Available for work</p>
+                  </Button>
+                </div>
+
+          </div>
+
           <p className="text-base py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-lg mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sequi pariatur vitae cum laboriosam illum atque rem numquam.</p>
         </div>
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
