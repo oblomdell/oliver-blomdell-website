@@ -2,8 +2,8 @@
 
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes";
-import { BsSunFill, BsFillMoonStarsFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
+import { IoMdMoon, IoMdSunny } from "react-icons/io";
 
 export default function ThemeToggle() {
     const { theme, setTheme, systemTheme } = useTheme();
@@ -26,9 +26,11 @@ export default function ThemeToggle() {
             type="button"
         >
             {currentTheme === "dark" ? (
-                <BsSunFill className="size-6" />
+                <IoMdMoon className="size-6" />
+
             ) : (
-                <BsFillMoonStarsFill className="size-6" />
+                <IoMdSunny className="size-6" />
+
             )}
         </Button>
     );

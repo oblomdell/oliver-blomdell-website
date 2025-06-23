@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Rubik, Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import localFont from 'next/font/local'
-import { ThemeProvider } from "@/components/ThemeProvider";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
 
-const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin'],
+const rubik = Rubik ({
+  variable: "--font-rubik"
 })
 
-const burtons = localFont({
-  src: '../fonts/Burtons.otf',
-  variable: '--font-burtons',
+const robotoMono = Roboto_Mono ({
+  variable: "--font-roboto-mono"
 })
 
 const geistSans = Geist({
@@ -41,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${burtons.variable} ${inter.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${rubik.variable} ${robotoMono.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"
