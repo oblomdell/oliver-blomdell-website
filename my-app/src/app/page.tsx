@@ -16,12 +16,13 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="dark:bg-neutral-800 transition-all duration-300">
+    <main className="flex justify-center dark:bg-neutral-800 transition-all duration-300">
+      <div className="w-full max-w-screen-xl">
         <Hero />
-{/* 
-        <About />
 
-        <Portfolio /> */}
+        <Portfolio />
+        {/* <About /> */}
+      </div>
     </main>
   );
 }
