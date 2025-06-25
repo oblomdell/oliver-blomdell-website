@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
     return (
-        <section className="h-dvh flex flex-col md:flex-row-reverse justify-center md:justify-evenly md:items-center gap-[20px] mb-[60px]">
+        <section className="h-dvh flex flex-col md:flex-row-reverse justify-center md:justify-evenly md:items-center gap-[20px] mb-[60px] md:mb-[100px] xl:mb-[200px]">
 
             {/* <nav className="py-10 sm:mb-12 space-x-2 flex justify-between dark:text-white items-center">
                 <h1 className="text-xl font-rubik uppercase font-extrabold">Oliver Blomdell</h1>
