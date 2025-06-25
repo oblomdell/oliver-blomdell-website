@@ -79,7 +79,7 @@ export default function Hero() {
                         <p>Available for work</p>
                     </Button>
                 </div>
-                <a className="bg-sky-600 dark:bg-white  text-white dark:text-black font-[Arial] font-bold text-xl px-6 py-3 rounded-[20px] shadow-md" href="#">Resume</a>
+                <a className="bg-sky-600 dark:bg-white  text-white dark:text-black font-[Arial] font-bold text-xl px-6 py-3 rounded-[20px] shadow-md transition-transform duration-200 hover:scale-105" href="#">Resume</a>
             </div>
 
             {/* <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce text-gray-600 dark:text-gray-300">

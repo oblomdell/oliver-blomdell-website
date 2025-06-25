@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Portfolio from "@/components/Portfolio";
-import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Oliver Blomdell - Information Architect",
@@ -21,7 +23,12 @@ export default function Home() {
         <Hero />
 
         <Portfolio />
-        {/* <About /> */}
+
+        <Skills />
+
+        <Contact />
+
+        <Footer />
       </div>
     </main>
   );
