@@ -1,6 +1,7 @@
 import projectData from "@/data/projects.json";
+import Image from "next/image";
 
-import { AiFillGithub, AiFillApple } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { CgExternal } from "react-icons/cg";
 import { FaAppStoreIos } from "react-icons/fa";
 
@@ -12,7 +13,15 @@ export default function Portfolio() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto">
         {projectData.map((project, index) => (
           <div key={index} className="h-full bg-white dark:bg-black/20 rounded-lg shadow-sm border border-gray-300 dark:border-gray-700 flex flex-col gap-4 min-h-[500px]">
-            <img src={project.image} alt={project.title} className="w-full aspect-[4/3] object-cover rounded-t-md" />
+            <div className="relative aspect-[4/3] rounded-t-md overflow-hidden">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                sizes="(min-width: 640px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
             <h2 className="font-roboto-mono text-lg font-bold px-2">{project.title}</h2>
             <p className="text-sm font-roboto-mono text-gray-600 dark:text-gray-300 px-2">{project.description}</p>
             

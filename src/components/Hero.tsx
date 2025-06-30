@@ -1,7 +1,7 @@
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import ThemeToggle from "@/components/theme/ThemeToggle";
 import Image from "next/image"
-import { BiBuilding, BiChevronDown } from "react-icons/bi";
+import { BiBuilding } from "react-icons/bi";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -80,10 +80,6 @@ export default function Hero() {
                     </Button>
                 </div>
             </div>
-
-            {/* <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce text-gray-600 dark:text-gray-300">
-                <BiChevronDown size={32} />
-            </div> */}
 
         </section>
     );
