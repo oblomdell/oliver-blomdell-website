@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Portfolio from "@/components/Portfolio";
 import Skills from "@/components/Skills";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -25,8 +24,6 @@ export default function Home() {
         <Portfolio />
 
         <Skills />
-
-        <Contact />
 
         <Footer />
       </div>

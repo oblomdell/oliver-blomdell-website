@@ -26,10 +26,10 @@ export default function ThemeToggle() {
             type="button"
         >
             {currentTheme === "dark" ? (
-                <IoMdMoon className="size-6" />
+                <IoMdSunny className="size-6" />
 
             ) : (
-                <IoMdSunny className="size-6" />
+                <IoMdMoon className="size-6" />
 
             )}
         </Button>
