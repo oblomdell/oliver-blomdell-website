@@ -1,7 +1,7 @@
 [
     {
       "title": "Cura Ami",
-      "image": "/images/curaami2.png",
+      "image": "/images/curaami.png",
       "description": "An educational diabetes simulator for medical students at Gothenburg University.",
       "tech": ["React Native", "TypeScript", "Node"],
       "appstore": "https://apps.apple.com/se/app/cura-ami/id6743929376",
@@ -9,7 +9,7 @@
     },
     {
       "title": "Blomdell Import",
-      "image": "/images/blomdellimport1.png",
+      "image": "/images/blomdellimport.png",
       "description": "A responsive product catalog built from scratch for a Swedish tequila business.",
       "tech": ["Svelte", "JavaScript", "Tailwind"],
       "github": "https://github.com/oblomdell/blomdell-import",
