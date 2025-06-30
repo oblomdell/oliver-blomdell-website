@@ -2,8 +2,6 @@ import {
     FaReact,
     FaFigma,
     FaGitAlt,
-    FaUniversalAccess,
-    FaSitemap,
     FaNodeJs,
 } from "react-icons/fa";
 import { RiNextjsLine } from "react-icons/ri";
@@ -11,11 +9,9 @@ import { BiLogoTypescript, BiTransfer } from "react-icons/bi";
 import {
     SiTailwindcss,
     SiExpress,
-    SiMiro,
     SiSvelte,
     SiExpo,
 } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
 
 export default function Skills() {
     const skills = [
@@ -31,14 +27,11 @@ export default function Skills() {
         { name: "REST", icon: <BiTransfer className="text-black dark:text-white" /> },
         { name: "Figma", icon: <FaFigma className="text-pink-500 dark:text-pink-400" /> },
         { name: "Git", icon: <FaGitAlt className="text-orange-500 dark:text-orange-400" /> },
-        // { name: "Miro", icon: <SiMiro className="bg-yellow-400 text-black rounded-md p-1 dark:bg-yellow-300" /> },
-        // { name: "Accessibility", icon: <FaUniversalAccess className="text-purple-500 dark:text-purple-300" /> },
-        // { name: "Information Architecture", icon: <FaSitemap className="text-gray-700 dark:text-gray-200" /> },
     ];
 
     return (
-        <section className="text-center mb-[60px] md:mb-[100px] xl:mb-[200px] px-6">
-            <h1 className="font-rubik font-extrabold uppercase text-[32px]/9 md:text-[40px]/12 xl:text-5xl mb-[30px]">
+        <section className="text-center mb-[60px] md:mb-[100px] xl:mb-[200px] px-[60px] md:px-[120px]">
+            <h1 className="font-rubik font-extrabold uppercase text-[32px]/9 md:text-[40px]/12 xl:text-5xl mb-[30px] md:mb-[60px] xl:mb-[75px]">
                 Skills
             </h1>
 

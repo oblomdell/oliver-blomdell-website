@@ -1,0 +1,34 @@
+[
+    {
+      "title": "Cura Ami",
+      "image": "/images/curaami2.png",
+      "description": "An educational diabetes simulator for medical students at Gothenburg University.",
+      "tech": ["React Native", "TypeScript", "Node"],
+      "appstore": "https://apps.apple.com/se/app/cura-ami/id6743929376",
+      "demo": "https://tinyurl.com/5a53wbv3"
+    },
+    {
+      "title": "Blomdell Import",
+      "image": "/images/blomdellimport1.png",
+      "description": "A responsive product catalog built from scratch for a Swedish tequila business.",
+      "tech": ["Svelte", "JavaScript", "Tailwind"],
+      "github": "https://github.com/oblomdell/blomdell-import",
+      "demo": "https://blomdellimport.se"
+    },
+    {
+      "title": "Blaze And Blast",
+      "image": "/images/blazeandblast.png",
+      "description": "An arcade-style shooter with retro visuals and custom game mechanics.",
+      "tech": ["JavaScript", "HTML5 Canvas"],
+      "github": "https://github.com/JeNordahl/BlazeAndBlast",
+      "demo": "https://tinyurl.com/35dyhx5k"
+    },
+    {
+      "title": "Lyric & Trivia Guesser",
+      "image": "/images/geniusguessr.png",
+      "description": "An interactive quiz app where users guess song lyrics or answer trivia questions.",
+      "tech": ["Svelte", "JavaScript", "API management"],
+      "github": "https://github.com/Godisstrut/SvelteSnyggingar",
+      "demo": "https://tinyurl.com/9vk5yjmd"
+    }
+  ]

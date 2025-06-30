@@ -37,7 +37,7 @@ export default function Hero() {
             <div className="text-center flex flex-col gap-[20px] items-center">
                 <h1 className="font-rubik font-extrabold uppercase text-[32px]/9 md:text-[40px]/12 xl:text-5xl">Oliver<br />Blomdell</h1>
                 <h2 className="font-roboto-mono font-bold uppercase text-xl md:text-2xl">Information Architect</h2>
-                <div className="text-4xl flex justify-center gap-[25px]">
+                <div className="text-3xl flex justify-center gap-[25px]">
                     <a
                         href="https://www.linkedin.com/in/oliverblomdell/"
                         target="_blank"
@@ -64,7 +64,7 @@ export default function Hero() {
                     >
                         <AiFillMail /></a>
                 </div>
-                {/* <p className="font-roboto-mono max-w-[24ch]">With a passion for developing modern React web apps for commercial businesses.</p> */}
+                <p className="font-roboto-mono max-w-[24ch] text-pretty ">With a passion for developing modern React apps.</p>
                 <div className="flex sm:flex-row sm:items-center flex-col-reverse items-start gap-3">
                     <div className="flex items-center gap-2 pl-2">
                         <BiBuilding className="w-5 h-5" />
@@ -79,8 +79,6 @@ export default function Hero() {
                         <p>Available for work</p>
                     </Button>
                 </div>
-                <a className="bg-sky-600 dark:bg-white  text-white dark:text-black font-[Arial] font-bold text-xl px-6 py-3 rounded-[20px] shadow-md transition-transform duration-200 hover:scale-105" href="#">Resume</a>
-                {/* Ta bort CV knappen och lägg in text istället? */}
             </div>
 
             {/* <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce text-gray-600 dark:text-gray-300">
