@@ -4,11 +4,13 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 
 const rubik = Rubik ({
-  variable: "--font-rubik"
+  variable: "--font-rubik",
+  subsets: ["latin"],
 })
 
 const robotoMono = Roboto_Mono ({
-  variable: "--font-roboto-mono"
+  variable: "--font-roboto-mono",
+  subsets: ["latin"],
 })
 
 const geistSans = Geist({
